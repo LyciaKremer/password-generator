@@ -82,12 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
   copyButtons.forEach(button => {
     button.addEventListener('click', () => {
       navigator.clipboard.writeText(passwordInput.value).then(() => {
-        alert('Senha copiada para a área de transferência!');
+        alert('Password copied to clipboard!');
       }).catch(err => {
-        console.error('Erro ao copiar a senha: ', err);
+        console.error('Error copying password: ', err);
       });
     });
   });
 
+  updateRangeProgress();
   generatePassword();
 });

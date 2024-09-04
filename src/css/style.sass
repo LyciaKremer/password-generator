@@ -39,7 +39,7 @@ body
     font-weight: 700
     line-height: 42.2px
     margin-top: 16px
-    margin-bottom: 8px 
+    margin-bottom: 8px
 
   p
     font-size: 24px
@@ -48,7 +48,7 @@ body
     margin-bottom: 57px
     margin-top: 0
 
-.container 
+.container
   display: flex
   flex-direction: column
   justify-content: center
@@ -69,7 +69,7 @@ body
   margin-top: 16px
   cursor: pointer
 
-.settings 
+.settings
   background-color: $primary-color
   padding: 35px 40px 75px 40px
   margin-bottom: 20px
@@ -93,7 +93,7 @@ body
   @media (max-width: 1000px)
     flex-direction: column
 
-.result 
+.result
   display: flex
   align-items: center
   border-bottom: 4px solid $lilac
@@ -128,7 +128,7 @@ body
   @media (max-width: 600px)
     padding: 15px 15px
 
-#password 
+#password
   width: 100%
   padding: 8px
 
@@ -165,7 +165,7 @@ body
     font-weight: 500
     margin-top: 30px
 
-.inputRange 
+.inputRange
   -webkit-appearance: none
   width: 100%
   height: 10px
@@ -173,14 +173,14 @@ body
   background: $secondary-color
   position: relative
   outline: none
-  background-image: linear-gradient(to right,$light 0%,$light var(--progress, 0%),$secondary-color var(--progress, 0%),$secondary-color 100%)
+  background-image: linear-gradient(to right,#FFFFFF 0%,#FFFFFF var(--progress, 0%),$secondary-color var(--progress, 0%),$secondary-color 100%)
 
-.inputRange::-webkit-slider-runnable-track 
+.inputRange::-webkit-slider-runnable-track
   height: 10px
   border-radius: 5px
   background: transparent
 
-.inputRange::-webkit-slider-thumb 
+.inputRange::-webkit-slider-thumb
   -webkit-appearance: none
   appearance: none
   width: 28px
@@ -190,36 +190,36 @@ body
   cursor: pointer
   position: relative
   z-index: 2
-  margin-top: -9px 
+  margin-top: -9px
 
-.inputRange::-moz-range-track 
+.inputRange::-moz-range-track
   height: 10px
   border-radius: 5px
   background: transparent
 
-.inputRange::-moz-range-thumb 
+.inputRange::-moz-range-thumb
   width: 28px
   height: 28px
   border-radius: 50%
   background: $light
   cursor: pointer
 
-.inputRange::-ms-track 
+.inputRange::-ms-track
   height: 10px
   border-radius: 5px
   background: transparent
   border-color: transparent
   color: transparent
 
-.inputRange::-ms-fill-lower 
+.inputRange::-ms-fill-lower
   background: $secondary-color
   border-radius: 5px
 
-.inputRange::-ms-fill-upper 
+.inputRange::-ms-fill-upper
   background: $secondary-color
   border-radius: 5px
 
-.inputRange::-ms-thumb 
+.inputRange::-ms-thumb
   width: 28px
   height: 28px
   border-radius: 50%
@@ -229,7 +229,7 @@ body
 .wrapper-options
   display: flex
   flex-direction: column
-  label 
+  label
     font-size: 20px
     font-weight: 500
     color: $text-color
@@ -263,7 +263,7 @@ body
         font-size: 16px
 
 .checkbox
-  width: 100% 
+  width: 100%
   display: flex
   align-items: center
   justify-content: flex-end
@@ -272,7 +272,7 @@ body
   cursor: pointer
 
 .checkbox input
-  display:none
+  display: none
   width: 0
   height: 0
 
@@ -288,14 +288,14 @@ body
   background-color: $secondary-color
 
 .checkbox input:checked + span:after
-  content: url('/src/images/check.png')
+  content: url('../images/check.png')
   display: block
   width: 19px
   height: 30px
   font-size: 22px
   color: $dark
 
-.checkbox input:checked + span 
+.checkbox input:checked + span
   background-color: $light
 
 .checkbox span:before

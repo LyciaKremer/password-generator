@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="infos">
+    <img src="images/unlock.png" alt="Cadedo lilás">
+    <h1>Gerador de senhas</h1>
+    <p>Gere instantaneamente uma senha aleatória e segura</p>
+  </div>
+  <div class="container">
+    <div class="result">
+      <div class="input-pass">
+        <label>senha</label>
+        <input type="text" id="password" readonly>
+      </div>
+      <div class="buttons">
+        <button id="copy">
+          <img src="images/copy.png" alt="Ícone para copiar">
+        </button>
+        <button id="generate"><img src="images/refresh-cw.png" alt="Ícone para gerar senha"></button>
+      </div>
+    </div>
+    <div class="settings">
+      <p class="title-section">Personalize sua senha</p>
+      <div class="content">
+        <div class="wrapper-length">
+          <label for="length" class="wrapper-text">Número de caracteres</label>
+          <input type="range" id="inputRange" min="1" max="24" value="12" class="inputRange">
+          <input type="number" id="length" value="12" min="1" max="24">
+        </div>
+        <div class="wrapper-options">
+          <p class="wrapper-text">Características da senha</p>
+          <label class="checkbox"><input type='checkbox' name='checkbox' value='1' checked/> Letras minúsculas <span></span></label>
+          <label class="checkbox"><input type='checkbox' name='checkbox' value='2' /> Letras maiúsculas <span></span></label>
+          <label class="checkbox"><input type='checkbox' name='checkbox' value='3' /> Números <span></span></label>
+          <label class="checkbox"><input type='checkbox' name='checkbox' value='4' /> Caracteres especiais <span></span></label>
+        </div>
+        <div class="wrapper-strength">
+          <p class="wrapper-text">Força da senha</p>
+          <div class="bar">
+            <span class="progress"></span>
+          </div>
+          <div class="status">
+            <span class="label">Fraca</span>
+            <span class="label">Média</span>
+            <span class="label">Forte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="copy-button">Copiar senha</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

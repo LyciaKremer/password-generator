@@ -37,5 +37,5 @@ Este projeto é um gerador de senhas personalizado desenvolvido com HTML, SASS e
 Este é o link para utilização da aplicação em produção.
 
 ```bash
-https://password-generator-alura.vercel.app/
+https://password-generator-lycia.vercel.app/
 ```
